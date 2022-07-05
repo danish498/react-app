@@ -8,6 +8,9 @@ import AddToCart from './pages/AddToCart';
 
 import './App.css';
 import Layout from './components/layout/Layout';
+import Amazon from './pages/Amazon';
+import Flipkart from './pages/Flipkart';
+import Macys from './pages/Macys';
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
         <Route path='/shop'>
           <Shop />
         </Route>
+        <Route path='/amazon' component={Amazon} />
+        <Route path='/flipkart' component={Flipkart} />
+        <Route path='/macys' component={Macys} />
         <Route path='/add-items'>
           <AddItems />
         </Route>
