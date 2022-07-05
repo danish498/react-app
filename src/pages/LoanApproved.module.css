@@ -1,0 +1,23 @@
+.root {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.loan_root {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f9fa;
+  padding: 20px 50px 20px 50px;
+}
+
+.loan_view_container {
+  /* width: 100%; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
