@@ -5,17 +5,10 @@ import classes from './LoanPlanView.module.css';
 
 const LoanPlanView = ({ currentItem, item, onSelect }) => {
   console.log();
-
+  const clickHandler = () => {};
   return (
     <Fragment>
-      <button
-        className={
-          currentItem && currentItem.id == item.id
-            ? 'selected-loan-view'
-            : 'loan-view'
-        }
-        onClick={() => onSelect(item)}
-      >
+      <button onClick={() => onSelect(item)}>
         <div style={{ width: '8%', justifyContent: 'center' }}>
           <img src={downArrowIcon} className='arrow-icon' />
         </div>
@@ -24,13 +17,7 @@ const LoanPlanView = ({ currentItem, item, onSelect }) => {
         </div>
       </button>
       {currentItem && currentItem.id == item.id && (
-        <div
-          className={
-            currentItem && currentItem.id == item.id
-              ? 'selecte-toogle'
-              : 'toogle'
-          }
-        >
+        <div>
           {/* {item.description} */}
           <p className='subtitle1'>{item.subTitle1}</p>
           <p className='subtitle2'>{item.subTitle2}</p>

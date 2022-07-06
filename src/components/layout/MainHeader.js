@@ -50,7 +50,7 @@ const MainHeader = () => {
           </li>
           <li>
             <NavLink to='/add-items' activeClassName={classes.active}>
-              Add Items
+              {/* Add Items  */} Users List
             </NavLink>
           </li>
           <li>
