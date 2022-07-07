@@ -55,7 +55,7 @@ const MainHeader = () => {
           </li>
           <li>
             <NavLink to='cart' activeClassName={classes.active}>
-              Add To Cart
+              Add Expenses
             </NavLink>
           </li>
         </ul>
