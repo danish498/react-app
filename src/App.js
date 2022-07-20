@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import LoanApproved from './pages/LoanApproved';
@@ -16,6 +16,9 @@ const App = () => {
   return (
     <Layout>
       <Switch>
+        <Route path='/' exact>
+          <Redirect to='/home' />
+        </Route>
         <Route path='/home'>
           <Home />
         </Route>
